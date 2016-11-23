@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<html class="container" style="background-color: #e2e2e2">
+  <head>
+    <title>
+        Титульник
+    </title>
+             <link rel="stylesheet" href="/static/bootstrap.css" />
+             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+             <div class="container-fluid" style="padding-left: 15%" >
+
+             <h1>
+                 Заголовок который будет виден везде,
+                  он - часть шаблона , да еще и  используется  <abbr title="использование abbr"> abbr </abbr>
+
+             </h1>
+            </div>
+  </head>
+  <body>
+     <div >
+     {% block body %}
+       <button type="button" class="btn btn-danger" style="margin-left: 40%;" >
+        <h1><a href="books"  >1st PAGE, so spicy</a></h1>
+       </button>
+
+          <button type="button" class="btn"><a href="test" >Ко всей таблице , через Class-based view</a> </button>
+        </form>
+     {% endblock %}
+     </div>
+  </body>
+</html>

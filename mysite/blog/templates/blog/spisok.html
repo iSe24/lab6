@@ -1,0 +1,15 @@
+{% extends 'blog/shablon.html' %}
+{% block body1 %}
+{% endblock %}
+  {% block body %}
+    ШАБЛОНЫ ПОВСЮДУ
+    а ниже - инфа выведенная циклом
+        <table class="table table-striped">
+        {% for d in Text %}
+            <p class="text-center" style="height:30px; background:#c8e5bc; border: 3px solid #3e8f3e; border-radius: 10px;">
+                <a href="{% url 'govorit' pk=d %}" > {{ d }} </a>
+            </p>
+        </table>>
+
+        {% endfor %}
+  {% endblock  %}
